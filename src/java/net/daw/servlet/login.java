@@ -44,6 +44,7 @@ public class login extends HttpServlet {
                     HttpSession miSesion = request.getSession();
                     miSesion.setAttribute("login", request.getParameter("login"));
                     out.println("<h1>Zona privada</h1>");
+                    out.println("<a href=\"rafa.jsp\">Accede a la página de rafa</a><br />");
                     out.println("<a href=\"juego.jsp\">Acceso al juego</a><br />");
                     out.println("<a href=\"logout\">Logout</a><br />");
                 } else {
